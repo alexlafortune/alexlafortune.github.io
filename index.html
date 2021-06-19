@@ -16,16 +16,78 @@
 					<img src="images/profile_crop.png" width=600px>
 				</li>
 				<li>
+					<h3>Featured track</h3>
 					<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=13053282/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://alexlafortune.bandcamp.com/track/dreams-in-the-clay">Dreams in the Clay by Alex Lafortune</a></iframe>
-					<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=59401129/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://alexlafortune.bandcamp.com/track/take-me-to-your-high">Take Me to Your High by Alex Lafortune</a></iframe>
-					<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1219475645/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://alexlafortune.bandcamp.com/track/blackbird">Blackbird by Alex Lafortune</a></iframe>
-					<iframe style="border: 0; width: 100%; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=4128760461/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://alexlafortune.bandcamp.com/album/awakened-ep">Awakened EP by Alex Lafortune</a></iframe>
-					<!--<figure>
-						<a href=https://alexlafortune.bandcamp.com/album/awakened-ep>
-							<img src="images/awakened.png">
-						</a>
-						<figcaption>Awakened EP available to stream on Bandcamp</figcaption>
-					</figure>-->
+					<button type="button" class="collapsible">Awakened EP (2019)</button>
+					<div class="collapsiblecontent">
+						<ul class="albumgridlist">
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/awakened"><img src="images/albumart/awakened.jpg"></a>
+									<figcaption>I - Awakened</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/testament"><img src="images/albumart/testament.jpg"></a>
+									<figcaption>II - Testament</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/afterglow"><img src="images/albumart/afterglow.jpg"></a>
+									<figcaption>III - Afterglow</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="collapsible">Other singles</button>
+					<div class="collapsiblecontent">
+						<ul class="albumgridlist">
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/summer-in-the-arctic"><img src="images/albumart/summerinthearctic.jpg"></a>
+									<figcaption>Summer in the Arctic<br>(2020)</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/take-me-to-your-high"><img src="images/albumart/takemetoyourhigh.jpg"></a>
+									<figcaption>Take Me to Your High<br>(2020)</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/transituum"><img src="images/albumart/transituum.jpg"></a>
+									<figcaption>Transituum<br>(2020)</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/blackbird"><img src="images/albumart/blackbird.jpg"></a>
+									<figcaption>Blackbird<br>(2019)</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/cross-me-over"><img src="images/albumart/crossmeover.jpg"></a>
+									<figcaption>Cross Me Over<br>(2019)</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/time-to-waste"><img src="images/albumart/timetowaste.jpg"></a>
+									<figcaption>Time to Waste<br>(2018)</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<a href="https://alexlafortune.bandcamp.com/track/the-way-to-today"><img src="images/albumart/thewaytotoday.jpg"></a>
+									<figcaption>The Way to Today<br>(2017)</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -33,7 +95,7 @@
 			<ul class="gridlist">
 				<li>
 					<a href="http://alexlafortune.bandcamp.com"><img src="images/bandcamp.png" height=50px></a>
-					<p>Alex is a vocalist and guitarist currently based in Toronto, Canada. His music is self-recorded and produced, with influences from metal and progressive rock genres.<br>He is the lead vocalist and a guitarist for the jam rock band <a href="http://malarkeyjams.bandcamp.com/">Malarkey</a></p>
+					<p>Alex is a vocalist and guitarist currently based in Toronto, Canada. His music is self-recorded and produced, with influences from metal and progressive rock genres.<br>He is the lead vocalist and a guitarist for the jam rock band <a href="http://malarkeyjams.bandcamp.com/">Malarkey</a>.</p>
 				</li>
 				<li>
 					<a href="http://linkedin.com/in/alexlafortune"><img src="images/linkedin.png" height=50px></a>
@@ -51,5 +113,22 @@
 			<p class="footnote">&#169; Copyright &#169; 2021 Alexandre Lafortune. All rights reserved</p>
 		</div>
 	</div>
+	
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+			  content.style.maxHeight = null;
+			} else {
+			  content.style.maxHeight = content.scrollHeight + "px";
+			}
+		  });
+		}
+	</script>
 </body>
 </html>
