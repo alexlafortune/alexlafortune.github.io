@@ -1,10 +1,12 @@
-body{
+body
+{
 	background:url(../images/bg.png);
 	font-family:"Arial";
 }
 
 /*------------------------- Font ------------------------*/ 
-@font-face {
+@font-face 
+{
     font-family: 'Arial';
     //src: url('../fonts/swisop1.ttf') format('truetype')
     font-weight: normal;
@@ -12,7 +14,8 @@ body{
 }
 
 /*------------------------- Header ------------------------*/ 
-.header{
+.header
+{
 	background-color:#000;
 	height:40px;
     padding:10px 0 10px 0;
@@ -20,20 +23,27 @@ body{
 }
 
 /*------------------------- Body ------------------------*/ 
-.body{
+.body
+{
 	background:url(../images/bg.png) repeat #111;
 }
-.body div:first-child{
+
+.body div:first-child
+{
 	//background:url(../images/hseparator.png) repeat-x left top -30px;
 }
-.body .upper{
+
+.body .upper
+{
 	background-image:url(../images/hseparator.png);
 	background-position:left bottom -32px;
 	background-repeat:repeat-x;
 	width:100%;
 	color:#fff;
 }
-.body div ul.featured{
+
+.body div ul.featured
+{
 	float:center;
 	list-style:none;
 	margin:0 auto;
@@ -43,7 +53,9 @@ body{
 	display:flex;
 	justify-content:center;
 }
-.body div ul.featured li{
+
+.body div ul.featured li
+{
 	float:center;
 	margin:40px 50px 0px 50px;
 	height:auto;
@@ -53,12 +65,16 @@ body{
 	display:flex;
 	flex-direction:column;
 	width:40%;
-	max-width:600px;
+	max-width:650px;
 }
-.body div{
+
+.body div
+{
 	background:url(../images/bg.png);
 }
-.body div ul.gridlist{
+
+.body div ul.gridlist
+{
 	margin:0 auto;
 	padding:10px 0 50px 0;
 	background:url(../images/bg2.png) repeat left top -32px;
@@ -66,7 +82,9 @@ body{
 	width:100%;
 	text-align:center;
 }
-.body div ul.gridlist li{
+
+.body div ul.gridlist li
+{
 	display:inline-block;
 	float:center;
 	padding:40px;
@@ -74,10 +92,14 @@ body{
 	width:300px;
 	vertical-align:top;
 }
-.body div ul.gridlist li img{
+
+.body div ul.gridlist li img
+{
 	float:center;
 }
-.body div ul.gridlist li p{
+
+.body div ul.gridlist li p
+{
 	text-align:justify;
 	color:#828081;
 	margin:17px 0 0;
@@ -86,30 +108,43 @@ body{
 	background:none;
 	padding:0;
 }
-.body div ul.gridlist li a:hover{
+
+.body div ul.gridlist li a:hover
+{
 	color:#ff0000;
 }
-.body div ul.gridlist li a{
+
+.body div ul.gridlist li a
+{
 	color:#ffff00;
 }
-.body div ul.gridlist figure{
+
+.body div ul.gridlist figure
+{
 	float:left;
 	width:auto;
 	height:300px;
 }
-.body div ul.gridlist figure figcaption{
+
+.body div ul.gridlist figure figcaption
+{
 	background-color:#000;
 	color:#777;
 	text-align:center;
 	padding:10px;
 }
-.body div ul.albumgridlist{
+
+.body div ul.albumgridlist
+{
 	padding:0 0 20px 0;
+	background-color:#070707;
 	overflow:hidden;
 	width:100%;
 	text-align:center;
 }
-.body div ul.albumgridlist li{
+
+.body div ul.albumgridlist li
+{
 	display:inline-block;
 	float:center;
 	margin:0;
@@ -119,31 +154,39 @@ body{
 	height:140px;
 	vertical-align:top;
 }
-.body div ul.albumgridlist figure{
+
+.body div ul.albumgridlist figure
+{
 	margin:0;
 	float:left;
 	width:auto;
 	height:90%;
 }
-.body div ul.albumgridlist figure figcaption{
+
+.body div ul.albumgridlist figure figcaption
+{
 	background:none;
 	font-size:12px;
 	padding:2px;
 }
 
-figure img{
+figure img
+{
 	height:100%;
 }
 
 /*------------------------- Footer ------------------------*/ 
-.footer{
+.footer
+{
 	width:auto;
 	background:url(../images/hseparator.png) repeat-x left top -30px;
 	padding:45px 0 105px;
 	margin:0 auto;
 	overflow:hidden;
 }
-.footer p.footnote{
+
+.footer p.footnote
+{
 	color:#444;
 	clear:both;
 	text-align:center;
@@ -157,37 +200,41 @@ figure img{
 }
 
 /*------------------------- Collapsible ------------------------*/ 
-.collapsible {
-  background-color: #111;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
+.collapsible 
+{
+	background-color: #111;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 15px;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+.active, .collapsible:hover
+{
+	background-color: #333;
 }
 
-.collapsiblecontent {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  max-height:0;
-  transition:max-height 0.2s ease-out;
+.collapsiblecontent 
+{
+	overflow: hidden;
+	max-height:0;
+	transition:max-height 0.2s ease-out;
 }
 
-.collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: white;
-  float: right;
-  margin-left: 5px;
+.collapsible:after 
+{
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+.active:after 
+{
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
