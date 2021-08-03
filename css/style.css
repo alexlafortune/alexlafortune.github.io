@@ -4,7 +4,7 @@ body
 	font-family:"Arial";
 }
 
-/*------------------------- Font ------------------------*/ 
+/*------------------------- FONT ------------------------*/ 
 @font-face 
 {
     font-family: 'Arial';
@@ -13,7 +13,7 @@ body
     font-style: normal;
 }
 
-/*------------------------- Header ------------------------*/ 
+/*------------------------- HEADER ------------------------*/ 
 .header
 {
 	background-color:#000;
@@ -22,7 +22,7 @@ body
 	text-align:center;
 }
 
-/*------------------------- Body ------------------------*/ 
+/*------------------------- BODY ------------------------*/ 
 .body
 {
 	background:url(../images/bg.png) repeat #111;
@@ -42,6 +42,18 @@ body
 	color:#fff;
 }
 
+.body div
+{
+	background:url(../images/bg.png);
+}
+
+figure img
+{
+	height: 100%;
+}
+
+/*------------------------- FEATURED ------------------------*/ 
+
 .body div ul.featured
 {
 	float:center;
@@ -57,7 +69,7 @@ body
 .body div ul.featured li
 {
 	float:center;
-	margin:40px 50px 0px 50px;
+	margin:40px 0 0 0;
 	height:auto;
 	padding:0;
 	text-align:center;
@@ -68,10 +80,7 @@ body
 	max-width:650px;
 }
 
-.body div
-{
-	background:url(../images/bg.png);
-}
+/*------------------------- GRID LIST ------------------------*/ 
 
 .body div ul.gridlist
 {
@@ -119,22 +128,9 @@ body
 	color:#ffff00;
 }
 
-.body div ul.gridlist figure
-{
-	float:left;
-	width:auto;
-	height:300px;
-}
+/*------------------------- ALBUM GRID ------------------------*/ 
 
-.body div ul.gridlist figure figcaption
-{
-	background-color:#000;
-	color:#777;
-	text-align:center;
-	padding:10px;
-}
-
-.body div ul.albumgridlist
+.body div ul.albumgrid
 {
 	padding:0 0 20px 0;
 	background-color:#070707;
@@ -143,7 +139,7 @@ body
 	text-align:center;
 }
 
-.body div ul.albumgridlist li
+.body div ul.albumgrid li
 {
 	display:inline-block;
 	float:center;
@@ -155,7 +151,7 @@ body
 	vertical-align:top;
 }
 
-.body div ul.albumgridlist figure
+.body div ul.albumgrid figure
 {
 	margin:0;
 	float:left;
@@ -163,16 +159,96 @@ body
 	height:90%;
 }
 
-.body div ul.albumgridlist figure figcaption
+.body div ul.albumgrid figure figcaption
 {
 	background:none;
 	font-size:12px;
 	padding:2px;
 }
 
-figure img
+/*------------------------- PROJECT LIST ------------------------*/ 
+
+.body div ul.projectlist 
 {
-	height:100%;
+	margin: 0 auto;
+	padding: 10px 0 50px 0;
+	background: url(../images/bg2.png) repeat left top -32px;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+.body div ul.projectlist li 
+{
+	background: url(../images/bg.png) repeat left top;
+	display: inline-block;
+	float: center;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	width: 90%;
+	vertical-align: top;
+}
+
+.body div ul.projectlist li img 
+{
+	float: center;
+}
+
+.body div ul.projectlist li p 
+{
+	text-align: justify;
+	color: #828081;
+	line-height: 24px;
+	font-size: 16px;
+	background: none;
+	padding: 0;
+}
+
+.body div ul.projectlist img
+{
+	float: left;
+	height: 500px;
+	width: 500px;
+	margin-right: 20px;
+}
+
+.body div ul.projectlist h1
+{
+	font-size: 24px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.body div ul.projectlist h2
+{
+	font-size: 20px;
+	text-align: left;
+	color: #ffff77;
+	font-style: italic;
+}
+
+.body div ul.projectlist li div.progresspicgrid
+{
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.body div ul.projectlist li div.progresspicgrid img
+{
+	float: left;
+	width: auto;
+	max-width: calc(20% - 10px);
+	height: 200px;
+	margin: 0 0 0 10px;
+}
+
+.body div ul.projectlist li div.progresspicgrid img:first-child
+{
+	margin-left: 0px;
 }
 
 /*------------------------- Footer ------------------------*/ 
